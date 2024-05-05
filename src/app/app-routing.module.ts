@@ -9,6 +9,7 @@ import { SeratComponent } from './pages/articles/serat/serat.component';
 import { LemakComponent } from './pages/articles/lemak/lemak.component';
 import { ShidietComponent } from './pages/articles/shidiet/shidiet.component';
 import { KaloriComponent } from './pages/articles/kalori/kalori.component';
+import { HubungiKamiComponent } from './pages/hubungi-kami/hubungi-kami.component';
 
 
 const routes: Routes = [
@@ -39,6 +40,9 @@ const routes: Routes = [
       },
       {
         path: 'articles/kalori', component: KaloriComponent
+      },
+      {
+        path: 'hubungi-kami', component: HubungiKamiComponent
       }
     ]
   }

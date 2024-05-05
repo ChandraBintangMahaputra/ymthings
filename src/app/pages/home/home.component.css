@@ -114,6 +114,33 @@
     text-decoration: none;
 }
 
+.section3 {
+    padding: 60px 0;
+    background-color: #f8f9fa;
+  }
+  
+  .section3 h4 {
+    margin-bottom: 40px;
+    color: rgba(0, 128, 0, 0.9);
+    text-align: center;
+  }
+  
+  .section3 .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .section3 .row {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .section3 img {
+    width: 100%;
+    height: auto;
+    max-width: 300px; /* Atur lebar maksimum gambar */
+  }
+
 @media (max-width: 768px) {
     
     .section1 h4, .section2 h4 {
@@ -146,6 +173,22 @@
     .content p {
         font-size: 0.8rem; 
     }
+
+    .section3 .row {
+        flex-direction: column;
+        align-items: center;
+      }
+    
+      .section3 .col-md-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+      }
+
+      .section3 img {
+        display: block;
+        margin: 0 auto; /* Menengahkan gambar */
+      }
 
 }
 

@@ -10,15 +10,15 @@ import { HomeComponent } from './pages/home/home.component';
 import { AboutComponent } from './pages/about/about.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CollapseModule } from 'ngx-bootstrap/collapse';
-import {  FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { GiziComponent } from './pages/gizi/gizi.component';
 import { KarboComponent } from './pages/articles/karbo/karbo.component';
 import { SeratComponent } from './pages/articles/serat/serat.component';
 import { LemakComponent } from './pages/articles/lemak/lemak.component';
 import { ShidietComponent } from './pages/articles/shidiet/shidiet.component';
-import { KaloriComponent } from './pages/articles/kalori/kalori.component'; 
-
+import { KaloriComponent } from './pages/articles/kalori/kalori.component';
+import { HubungiKamiComponent } from './pages/hubungi-kami/hubungi-kami.component'; 
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -36,7 +36,8 @@ import { KaloriComponent } from './pages/articles/kalori/kalori.component';
     SeratComponent,
     LemakComponent,
     ShidietComponent,
-    KaloriComponent
+    KaloriComponent,
+    HubungiKamiComponent
 
 
 
@@ -46,9 +47,9 @@ import { KaloriComponent } from './pages/articles/kalori/kalori.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     CollapseModule.forRoot(),
-    FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,47 @@
+<nav class="navbar navbar-expand-lg" >
+    <div class="container-fluid">
+      <a class="navbar-brand text-white" href="#">Shidiet</a>
+      <button class="navbar-toggler d-block d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+                <a class="nav-link text-white" aria-current="page" routerLink="/">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white " routerLink="/gizi">Edukasi Gizi</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link about text-white" routerLink="/about">About Us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white active" routerLink="/hubungi-kami">Hubungi Kami</a>
+            </li>
+        </ul>
+      </div>
+    </div>
+</nav>
+<div id="form-container">
+    <h2>Hubungi Kami</h2>
+
+    <form (ngSubmit)="onSubmit()" #contactForm="ngForm">
+        <div class="mb-3">
+          <label for="name" class="form-label">Nama</label>
+          <input type="text" class="form-control" id="name" name="name" ngModel required>
+        </div>
+        <div class="mb-3">
+          <label for="number" class="form-label">Number</label>
+          <input type="text" class="form-control" id="number" name="number" ngModel required>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" name="email" ngModel required>
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Message</label>
+          <textarea class="form-control" id="message" name="message" ngModel required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" [disabled]="!contactForm.valid">Submit</button>
+      </form>
+  </div>
