@@ -85,3 +85,10 @@ body{
     background-color: #004B8D;
   }
   
+  @media (max-width: 600px) {
+    #form-container {
+      width: 90%; /* Atur lebar menjadi 90% dari lebar layar saat layar berukuran kecil */
+      margin-top: 50px; /* Sesuaikan margin atas saat layar berukuran kecil */
+      margin-bottom: 50px; /* Sesuaikan margin bawah saat layar berukuran kecil */
+    }
+  }
