@@ -171,7 +171,8 @@
     }
 
     .content p {
-        font-size: 0.5rem; 
+        font-size: 0.8rem; 
+        padding: 5px; 
     }
 
     .section3 .row {
