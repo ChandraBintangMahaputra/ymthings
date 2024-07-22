@@ -141,6 +141,7 @@
     max-width: 300px; /* Atur lebar maksimum gambar */
   }
 
+
 @media (max-width: 768px) {
     
     .section1 h4, .section2 h4 {
