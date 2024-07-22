@@ -191,5 +191,9 @@
         margin: 0 auto; /* Menengahkan gambar */
       }
 
-}
+      .img-4{
+        min-height: 150px;
+        min-width: 350px;
+      }
 
+}
